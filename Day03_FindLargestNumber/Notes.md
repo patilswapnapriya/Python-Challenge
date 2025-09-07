@@ -1,23 +1,32 @@
-# Notes: Prime Number Check
+# Day X: Find Largest Number – Notes
 
-## Definition
-- A **prime number** is greater than 1.
-- It has **only 2 divisors**: 1 and itself.
-- Examples: 2, 3, 5, 7, 11, 13…
-- Non-prime (composite): 4, 6, 9, 12…
+## 🔹 Concept
+To find the **largest number** in a list:
+1. Start by assuming the **first element** is the largest.
+2. Traverse the list one element at a time.
+3. If you find an element greater than the current largest, update it.
+4. At the end, the variable holds the maximum value.
 
 ---
 
-## Why use `range(2, int(n**0.5) + 1)`?
-- To check divisibility, we only need to test numbers up to **√n**.
-- If `n` has a divisor larger than √n, it must also have one smaller than √n.
-- Example: 36 → factors pair up (2×18, 3×12, 6×6, 9×4…).
-- Once we pass √36 = 6, factors start repeating.
+## 🔹 Step-by-Step Example
+For `[3, 7, 2, 9, 5]`:
+- Start: largest = 3
+- Compare 7 → update largest = 7
+- Compare 2 → no change
+- Compare 9 → update largest = 9
+- Compare 5 → no change
+- Final Answer = 9 ✅
 
-### Example
-For `n = 25`:
-- √25 = 5
-- We must check divisibility by [2, 3, 4, 5].
-- Hence, we write:
-  ```python
-  range(2, int(n**0.5) + 1)
+---
+
+## 🔹 Solutions in Python
+
+### ✅ 1. Using Loop (manual method)
+```python
+def find_largest(nums):
+    largest = nums[0]  # assume first element is largest
+    for n in nums:
+        if n > largest:
+            largest = n
+    return largest

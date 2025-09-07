@@ -1,15 +1,16 @@
-# Day 2 Challenge: Palindrome Check
+# Day X Challenge: Find the Largest Number
 
 ## Problem
-Write a Python function to check whether a given string is a **palindrome**.
-
-A **palindrome** is a word, phrase, or number that reads the same backward as forward.
+Write a Python program to find the **largest number** in a list of integers.
 
 ---
 
 ## Input
-- A string `s`.
+- A list of integers.
 
 ## Output
-- Return `True` if `s` is a palindrome.
-- Return `False` otherwise.
+- The largest integer from the list.
+
+---
+
+## Examples
