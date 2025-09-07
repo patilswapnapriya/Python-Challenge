@@ -1,32 +1,9 @@
-# Day 2: Palindrome Check – Notes
-
-## 🔹 What is a Palindrome?
-A **palindrome** is a word, number, or phrase that reads the same **forward** and **backward**.
-
-Examples:
-- Words: `madam`, `racecar`, `level`
-- Numbers: `121`, `1331`
-- Phrases (ignoring spaces/punctuation): `A man a plan a canal Panama`
-
----
-
-## 🔹 Key Concepts in Python
-1. **String slicing** → `s[::-1]` reverses the string.
-2. **Case sensitivity** → Convert to lowercase (`s.lower()`) before checking.
-3. **Comparison** → A palindrome means:  
-   `original_string == reversed_string`
-
-TakeAways:
-
-Use slicing ([::-1]) for simplicity.
-
-Use two-pointers for efficiency in larger/streaming cases.
-
 🔹 What is Slicing?
 
 Slicing is a way to extract a portion of a sequence (string, list, tuple, etc.) using:
 
 sequence[start:stop:step]
+
 
 start → index to begin (inclusive)
 
